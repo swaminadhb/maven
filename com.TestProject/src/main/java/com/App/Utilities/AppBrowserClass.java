@@ -22,7 +22,8 @@ public class AppBrowserClass
 		
 		if(browsername.equals("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver","./myDrivers/chromedriver.exe" );
+			//System.setProperty("webdriver.chrome.driver","./myDrivers/chromedriver.exe" );
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		
 		}else if(browsername.equals("firefox")) {
